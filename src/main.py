@@ -18,14 +18,14 @@ def main():
     pygame.display.set_caption("Tank War ")
     
     # 加载图片,音乐,音效.
-    background_image     = pygame.image.load(r"..\image\background.png")
-    home_image           = pygame.image.load(r"..\image\home.png")
-    home_destroyed_image = pygame.image.load(r"..\image\home_destroyed.png")
+    background_image     = pygame.image.load(r"/Users/jack/TankWar/image/background.png")
+    home_image           = pygame.image.load(r"/Users/jack/TankWar/image/home.png")
+    home_destroyed_image = pygame.image.load(r"/Users/jack/TankWar/image/home_destroyed.png")
     
-    bang_sound          = pygame.mixer.Sound(r"..\music\bang.wav")
+    bang_sound          = pygame.mixer.Sound(r"/Users/jack/TankWar/music/bang.wav")
     bang_sound.set_volume(1)
-    fire_sound           = pygame.mixer.Sound(r"..\music\Gunfire.wav")
-    start_sound          = pygame.mixer.Sound(r"..\music\start.wav")
+    fire_sound           = pygame.mixer.Sound(r"/Users/jack/TankWar/music/Gunfire.wav")
+    start_sound          = pygame.mixer.Sound(r"/Users/jack/TankWar/music/start.wav")
     start_sound.play()
     
     # 定义精灵组:坦克，我方坦克，敌方坦克，敌方子弹
@@ -60,7 +60,7 @@ def main():
                 continue
             otherEnemyGroup.add(enemy)
     # 敌军坦克出现动画
-    appearance_image = pygame.image.load(r"..\image\appear.png").convert_alpha()
+    appearance_image = pygame.image.load(r"/Users/jack/TankWar/image/appear.png").convert_alpha()
     appearance = []
     appearance.append(appearance_image.subsurface(( 0, 0), (48, 48)))
     appearance.append(appearance_image.subsurface((48, 0), (48, 48)))
